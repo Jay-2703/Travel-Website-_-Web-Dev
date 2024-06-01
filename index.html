@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--BOOTSTRAP LINK-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--FONTS LINK-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,
+    700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--ICON LINK-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Travel Website</title>
+
+  
+</head>
+<body>
+
+    <!--NAVBAR START-->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" id="logo"><span style=" color: #3C7055;"> <i class="fas fa-plane"></i>
+        </span>Traveler</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Conatact</a>
+            </li>
+          </ul>
+
+          <!--BOOK NOW MODAL-->
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#booking" data-bs-whatever="@fat">Book Now</button>
+          <div class="modal fade" id="booking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="bookinglabel">Booking</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">from:</label>
+                      <input class="inputbox" placeholder="Destination" type="text" style="border: solid 0.5px;  opacity: 0.3; color: gray;  padding: 4px;"> 
+                    </div>
+                      <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">To:</label>
+                      <input class="inputbox" placeholder="Destination" type="text" style="border: solid 0.5px;  opacity: 0.3; color: gray;  padding: 4px;"> 
+                      </div>
+                    <div class="mb-3">
+                      <p class="h-blue">DEPARTING</p> 
+                      <input class="inputbox textmuted" type="date">
+                    </div>
+                    <div class="mb-3">
+                      <p class="h-blue">RETURNING</p> 
+                      <input class="inputbox textmuted" type="date">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Details:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+          
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" type="submit" style="color: white; background-color: #090845; border: none;"> Book Now </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!--BOOK NOW MODAL END-->
+
+        </div>
+    </nav>
+    <!--NAVBAR END-->
+
+  <!--CAROUUSEL START-->
+<div class="container-fluid" id="carouselsection">
+  <div class="row">
+      <div class="col-4 d-flex align-items-center" id="carouselHeading">
+          <h1 style="font-family: 'poppins'; font-weight: 900;">Experience the best moments in the Philippines <span class="region " style="color: #3C7055;"></span><br><span>
+              <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Search">
+                  <button class="btn btn-primary" type="button">Search</button>
+              </form>
+          </span></h1>
+      </div>
+      <div class="col-8">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="/NCR/Luneta.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="/Calabarzon/pinto art.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="/Central Luzon/Ditumabo _Mother_ Falls _ Baler.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="/Mimaropa/kayangan lake.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/Bicol Region/Daraga_church_1.jpg" class="d-block w-100" alt="...">
+                </div>
+                  <div class="carousel-item">
+                      <img src="/Ilocos Region/vigan.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="/Western Visayas/The Ruins 1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="/Central Visayas/kawasan falls.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="/Davao Region/Nature at the Heart of Davao City_ Eden Nature Park.jpg" class="d-block w-100" alt="...">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--CAROUSEL END-->
+
+<!-- FAVORATIRE DESTINATION START-->
+
+  <div class="main-txt">
+    <h1 style="color: #090845; margin: 10px; text-align: center; font-family: 'poppins';">FAVORITE DESTINATIONS</h1>
+  </div><br>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+          <img src="/Calabarzon/pinto art.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title" style="font-weight: bold;">
+                      Pinto Art Museum
+                  </h5>
+                  <i class="far fa-heart" style="font-size: 24px; color: red;"></i>
+              </div>
+              <p class="card-text">Immerse yourself in a world of creativity and inspiration at the Pinto Art Museum in Antipolo, Rizal. This sprawling art haven showcases a diverse collection 
+                of contemporary Filipino artworks, housed within Mediterranean-inspired galleries and lush gardens. </p>
+  
+              <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h6>(99+ Reviews)</h6>
+              <h6>Price: <strong>&#8369;4599</strong></h6>
+              <div class="d-flex justify-content-end">
+                  <button type="button" class="btn btn-success ml-auto"> <a href="#Book" style="text-decoration: none; color: white; font-weight: bold;" >Book Now</a></button>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="col">
+    <div class="card h-100">
+        <img src="/Bicol Region/Daraga_church_1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title" style="font-weight: bold;">
+                    Daraga Church
+                </h5>
+                <i class="far fa-heart" style="font-size: 24px; color: red;"></i>
+            </div>
+            <p class="card-text">Perched atop a hill overlooking the picturesque town of Daraga, Albay, Daraga Church is a symbol of faith and resilience. Built in the 18th century by Franciscan missionaries, this architectural marvel boasts a blend of Baroque and Oriental design elements, adorned with intricate carvings and ornate decorations. Inside, visitors
+               can admire the church's majestic interiors, including its 
+               stunning altar and ceiling frescoes.</p>
+
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>(99+ Reviews)</h6>
+            <h6>Price: <strong>&#8369;3999</strong></h6>
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-success ml-auto"> <a href="#Book" style="text-decoration: none; color: white; font-weight: bold;" >Book Now</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+  <div class="card h-100">
+      <img src="/NCR/Luneta.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center">
+              <h5 class="card-title" style="font-weight: bold;">
+                  Luneta Park
+              </h5>
+              <i class="far fa-heart" style="font-size: 24px; color: red;"></i>
+          </div>
+          <p class="card-text">Nestled in the heart of Manila lies Rizal Park, a historic urban oasis named after Dr. Jose Rizal, the Philippines' national hero. Spanning acres of lush greenery, this iconic park serves as a tribute to 
+            Rizal's legacy and offers a serene escape from the city's hustle and bustle.</p>
+
+          <div class="star">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+          </div>
+          <h6>(99+ Reviews)</h6>
+          <h6>Price: <strong>&#8369;2199</strong></h6>
+          <div class="d-flex justify-content-end">
+              <button type="button" class="btn btn-success ml-auto"> <a href="#Book" style="text-decoration: none; color: white; font-weight: bold;" >Book Now</a></button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- FAVORATIRE DESTINATION END-->
+
+
+<!--FORM START-->
+<div class="col-12">
+<div class="container rounded shadow-lg"> 
+    <h1 style="color: #090845; margin: 10px; text-align: center; font-family: 'poppins';">BOOK</h1>
+  <form action=""> 
+    <div class="row"> 
+      <div class="col-md-2 pe-0 col-sm-12"> 
+      </div> 
+      <div class="col-md-2 pe-0 col-sm-12"> 
+      </div> 
+      <div class="col-md-2 pe-0 col-sm-12"> 
+      </div> 
+    </div> 
+    <div class="row">
+      <div class="col-md-6 col-12 mb-4"> 
+        <div class="form-control d-flex flex-column"> 
+          <p >FROM</p> 
+          <input class="inputbox" placeholder="Destination" type="text"> 
+        </div> 
+      </div> 
+      <div class="col-md-6 col-12 mb-4"> 
+        <div class="form-control d-flex flex-column"> 
+          <p>TO</p> 
+          <input class="inputbox" placeholder="Destination" type="text"> 
+        </div>
+      </div>
+    </div> 
+    <div class="row"> 
+      <div class="col-md-6 col-12 mb-4"> 
+        <div class="form-control d-flex flex-column"> 
+          <p>DEPARTING</p> 
+          <input class="inputbox textmuted" type="date"> 
+        </div> 
+      </div> 
+      <div class="col-md-6 col-12 mb-4"> 
+        <div class="form-control d-flex flex-column"> 
+          <p>RETURNING</p> 
+          <input class="inputbox textmuted" type="date"> 
+        </div> 
+      </div> 
+    </div> 
+    <div class="row"> 
+      <div class="col-md-4 mb-4"> 
+        <div class="form-control d-flex flex-column"> 
+          <p>NUMBER OF TRAVELERS</p> 
+          <select class="border-0 outline-none"> 
+            <option value="" hidden selected>0</option> 
+            <option value="1">1</option> 
+            <option value="2">2</option> 
+            <option value="3">3</option> 
+          </select> 
+        </div> 
+      </div> 
+    </div>
+    <textarea class="form-control" rows="5" name="text" placeholder="Enter Name and Email" style="margin-bottom: 10px;"></textarea>
+    <button class="submit" type="submit" style="color: white; background-color: #090845; border: none; padding: 10px;"> Book Now </button>
+  </form> 
+</div>
+</div>
+<!--FORM END-->
+
+ <!-- Services Start -->
+
+ <div class="card text-center border-0 shadow rounded-0 p-4" style="max-width: 22rem;">
+    <div class="icon">
+      <i class="fas fa-hotel"></i>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title fw-bold">Affordable Hotels</h4>
+        <p class="card-text">Unbeatable deals await at affordable hotels, ensuring cozy stays without breaking the bank.</p>
+    </div>
+</div>
+
+<div class="card text-center border-0 shadow rounded-0 p-4" style="max-width: 22rem;">
+  <div class="icon">
+    <i class="fas fa-utensils"></i>
+  </div>
+  <div class="card-body">
+      <h4 class="card-title fw-bold">Food And Drinks</h4>
+      <p class="card-text">Indulge your taste buds with 
+        budget-friendly culinary delights and refreshing drinks.</p>
+  </div>
+</div>
+
+<div class="card text-center border-0 shadow rounded-0 p-4" style="max-width: 22rem;">
+  <div class="icon">
+    <i class="fas fa-bullhorn"></i>
+  </div>
+  <div class="card-body">
+      <h4 class="card-title fw-bold">Safety Guide</h4>
+      <p class="card-text">Travel worry-free with comprehensive safety guides,
+         ensuring peace of mind on your journey.</p>
+  </div>
+</div>
+
+<div class="card text-center border-0 shadow rounded-0 p-4" style="max-width: 22rem;">
+  <div class="icon">
+    <i class="fas fa-globe-asia"></i>
+  </div>
+  <div class="card-body">
+      <h4 class="card-title fw-bold">Around The World</h4>
+      <p class="card-text">Embark on epic adventures around the world with our curated
+         itineraries, unveiling diverse cultures and landscapes.</p>
+  </div>
+</div>
+
+<div class="card text-center border-0 shadow rounded-0 p-4" style="max-width: 22rem;">
+  <div class="icon">
+    <i class="fas fa-plane"></i>
+  </div>
+  <div class="card-body">
+      <h4 class="card-title fw-bold">Fastest Travel</h4>
+      <p class="card-text">Zip through destinations with the fastest travel options available,
+         maximizing your time for exploration.</p>
+  </div>
+</div>
+
+<div class="card text-center border-0 shadow rounded-0 p-4" style="max-width: 22rem;">
+  <div class="icon">
+    <i  class= "fas fa-hiking"></i>
+  </div>
+  <div class="card-body">
+      <h4 class="card-title fw-bold">Activities</h4>
+      <p class="card-text">Dive into thrilling activities tailored to your every interest, 
+        from adrenaline-pumping adventures to serene explorations.</p>
+  </div>
+</div>
+
+<!-- Services End -->
+
+
+
+
+
+
+
+
+<!--ABOUT US START-->
+
+
+
+<!--ABOUT US END-->
+
+
+
+
+
+
+
+
+
+    <!--JAVASCRIPT LINK-->
+    <script src="index.js"></script>
+
+
+    <!--BOOTSTRAP LINK-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+</html>

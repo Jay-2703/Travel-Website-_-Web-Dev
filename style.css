@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'poppins', sans-serif;
+    font-weight:100;
+    scroll-behavior: smooth;
+}
+
+/*Navbar start*/
+#logo span{
+    color: #3C7055;
+    font-weight: 900;
+    font-family: "poppins";
+    
+}
+
+#logo{
+    font-weight: 900;
+    font-family: "poppins";
+}
+
+#navbar ul li a{
+    color: #3C7055;
+    font-weight: 600;
+}
+
+#navbar ul li :hover{
+    background-color: #2B29A0;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+li{
+    font-family: "poppins";
+
+}
+/*Navbar start*/
+
+/*FORM START*/
+
+.inputbox {
+    border: none;
+    outline: none
+}
+
+.outline-none {
+    outline: none
+}
+
+.btn.btn-primary {
+    height: 60px;
+    font-size: 20px;
+    padding: 10px
+}
+
+/*FORM END*/
+
+/*SERVICES CARD  START*/
+
+i{
+    font-size: 24px;
+    color: #2B29A0;
+}
+
+.card{
+    margin: 10px 20px 10px 65px;
+}
+
+.card-text{
+    color: #3C7055;
+}
+
+/*SERVICES CARD  START*/
+
